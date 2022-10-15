@@ -92,25 +92,24 @@ class ModifyData:
                         newRow += newCateg + ","
                     row[iCol] = newRow[:-1] # suppression de la dernière virgule
 
-    def get_categories_freq(self):
+    def get_column_freq(self, column_name):
         freq = dict()
         for iCol in range(len(self._columns)):
-            if self._columns[iCol].startswith("categories"):
+            if self._columns[iCol].startswith(column_name):
                 for row in self._data:
-                    for categ in row[iCol].split(','):
-                        if categ in freq:
-                            freq[categ] += 1
+                    for data in row[iCol].split(','):
+                        if data in freq:
+                            freq[data] += 1
                         else:
-                            #print(f"{categ} not in {freq.keys()}")
-                            freq[categ] = 1
+                            freq[data] = 1
         return freq
     
-    def print_categories_ordered(self):
-        freq = self.get_categories_freq()
+    def print_column_ordered(self, column_name):
+        freq = self.get_column_freq(column_name)
         ordered = sorted(freq.items(), key=lambda x: x[1])
-        for c in ordered:
-            print(f'{c[1]}. {c[0]}')
-        print(f"There are {len(ordered)} categories :\n")
+        for data in ordered:
+            print(f'{data[1]}. {data[0]}')
+        print(f"There are {len(ordered)} different values for the column {column_name}")
 
 if __name__=='__main__':
     if len(argv)!=3:
@@ -120,7 +119,7 @@ if __name__=='__main__':
         exit(1)
     modifData = ModifyData(argv[1], argv[2])
     print(modifData._columns)
-    modifData.print_categories_ordered()
+    modifData.print_column_ordered("categories")
     modifData.sort_categories()
-    modifData.print_categories_ordered()
+    modifData.print_column_ordered("categories")
     modifData.write_data_csv()
