@@ -1,0 +1,258 @@
+@prefix ex: <http://example.com/> .
+<http://electronicProduct/0> ex:brand "MTX Audio" .
+<http://electronicProduct/1> ex:brand "mophie" .
+<http://electronicProduct/2> ex:brand "Toshiba" .
+<http://electronicProduct/3> ex:brand "Fusion Marine" .
+<http://electronicProduct/4> ex:brand "PANAMX" .
+<http://electronicProduct/5> ex:brand "VXi" .
+<http://electronicProduct/6> ex:brand "MartinLogan" .
+<http://electronicProduct/7> ex:brand "OmniMount" .
+<http://electronicProduct/8> ex:brand "Isimple" .
+<http://electronicProduct/9> ex:brand "Virgin Mobile" .
+<http://electronicProduct/10> ex:brand "Samsung" .
+<http://electronicProduct/11> ex:brand "DENON - HEOS" .
+<http://electronicProduct/12> ex:brand "MEE audio" .
+<http://electronicProduct/13> ex:brand "Tiffen" .
+<http://electronicProduct/14> ex:brand "Transcend" .
+<http://electronicProduct/15> ex:brand "SOL REPUBLIC" .
+<http://electronicProduct/16> ex:brand "Sonax" .
+<http://electronicProduct/17> ex:brand "Planet Audio" .
+<http://electronicProduct/18> ex:brand "Sabrent" .
+<http://electronicProduct/19> ex:brand "Fitbit" .
+<http://electronicProduct/20> ex:brand "Sigma" .
+<http://electronicProduct/21> ex:brand "LG" .
+<http://electronicProduct/22> ex:brand "Western Digital" .
+<http://electronicProduct/23> ex:brand "House of Marley" .
+<http://electronicProduct/24> ex:brand "Urban Armor Gear" .
+<http://electronicProduct/25> ex:brand "Kensington" .
+<http://electronicProduct/26> ex:brand "ZTE" .
+<http://electronicProduct/27> ex:brand "Pro-Ject" .
+<http://electronicProduct/28> ex:brand "Google" .
+<http://electronicProduct/29> ex:brand "ViewSonic" .
+<http://electronicProduct/30> ex:brand "M-Audio" .
+<http://electronicProduct/31> ex:brand "JBL" .
+<http://electronicProduct/32> ex:brand "Westone" .
+<http://electronicProduct/33> ex:brand "Epson" .
+<http://electronicProduct/34> ex:brand "VIZIO" .
+<http://electronicProduct/35> ex:brand "Siriusxm" .
+<http://electronicProduct/36> ex:brand "Joby" .
+<http://electronicProduct/37> ex:brand "SANUS" .
+<http://electronicProduct/38> ex:brand "Ghostek" .
+<http://electronicProduct/39> ex:brand "Bower" .
+<http://electronicProduct/40> ex:brand "Goal Zero" .
+<http://electronicProduct/41> ex:brand "LifeProof" .
+<http://electronicProduct/42> ex:brand "Sling Media" .
+<http://electronicProduct/43> ex:brand "Tenba" .
+<http://electronicProduct/44> ex:brand "KICKER" .
+<http://electronicProduct/45> ex:brand "Ultimate Ears" .
+<http://electronicProduct/46> ex:brand "Skullcandy" .
+<http://electronicProduct/47> ex:brand "Pioneer" .
+<http://electronicProduct/48> ex:brand "Seagate" .
+<http://electronicProduct/49> ex:brand "Crosley" .
+<http://electronicProduct/50> ex:brand "Elite Screens" .
+<http://electronicProduct/51> ex:brand "Beats" .
+<http://electronicProduct/52> ex:brand "iSimple" .
+<http://electronicProduct/53> ex:brand "MSI" .
+<http://electronicProduct/54> ex:brand "NZXT" .
+<http://electronicProduct/55> ex:brand "Klipsch Xr8i In-Ear Headphones" .
+<http://electronicProduct/56> ex:brand "Sanus" .
+<http://electronicProduct/57> ex:brand "BenQ" .
+<http://electronicProduct/58> ex:brand "iLive" .
+<http://electronicProduct/59> ex:brand "Monster" .
+<http://electronicProduct/60> ex:brand "Arris" .
+<http://electronicProduct/61> ex:brand "Jensen" .
+<http://electronicProduct/62> ex:brand "Acer" .
+<http://electronicProduct/63> ex:brand "Retrak" .
+<http://electronicProduct/64> ex:brand "Steelseries" .
+<http://electronicProduct/65> ex:brand "PELICAN" .
+<http://electronicProduct/66> ex:brand "VINPOWER DIGITAL DIRECTSHIP" .
+<http://electronicProduct/67> ex:brand "Tivo" .
+<http://electronicProduct/68> ex:brand "Kenwood" .
+<http://electronicProduct/69> ex:brand "Braven" .
+<http://electronicProduct/70> ex:brand "DENAQ" .
+<http://electronicProduct/71> ex:brand "Marantz" .
+<http://electronicProduct/72> ex:brand "VisionTek" .
+<http://electronicProduct/73> ex:brand "Nikon" .
+<http://electronicProduct/74> ex:brand "Onkyo" .
+<http://electronicProduct/75> ex:brand "Viper" .
+<http://electronicProduct/76> ex:brand "Alpine" .
+<http://electronicProduct/77> ex:brand "Lenovo" .
+<http://electronicProduct/78> ex:brand "Sunpak" .
+<http://electronicProduct/79> ex:brand "SiriusXM" .
+<http://electronicProduct/80> ex:brand "XFX" .
+<http://electronicProduct/81> ex:brand "ONLINE" .
+<http://electronicProduct/82> ex:brand "JVC" .
+<http://electronicProduct/83> ex:brand "SpeakerCraft" .
+<http://electronicProduct/84> ex:brand "GEKO" .
+<http://electronicProduct/85> ex:brand "Incipio" .
+<http://electronicProduct/86> ex:brand "SHARKK" .
+<http://electronicProduct/87> ex:brand "Innovative Technology" .
+<http://electronicProduct/88> ex:brand "Peerless" .
+<http://electronicProduct/89> ex:brand "StarTech.com" .
+<http://electronicProduct/90> ex:brand "V-MODA" .
+<http://electronicProduct/91> ex:brand "Zmodo" .
+<http://electronicProduct/92> ex:brand "Peak Design" .
+<http://electronicProduct/93> ex:brand "Manfrotto" .
+<http://electronicProduct/94> ex:brand "Lowepro" .
+<http://electronicProduct/95> ex:brand "Sandisk" .
+<http://electronicProduct/96> ex:brand "Definitive Technology" .
+<http://electronicProduct/97> ex:brand "G-Technology" .
+<http://electronicProduct/98> ex:brand "Sonos" .
+<http://electronicProduct/99> ex:brand "Hoya" .
+<http://electronicProduct/100> ex:brand "Secur" .
+<http://electronicProduct/101> ex:brand "TP-Link" .
+<http://electronicProduct/102> ex:brand "Microsoft" .
+<http://electronicProduct/103> ex:brand "TiVo" .
+<http://electronicProduct/104> ex:brand "Case Logic" .
+<http://electronicProduct/105> ex:brand "Sherwood" .
+<http://electronicProduct/106> ex:brand "Power Acoustik" .
+<http://electronicProduct/107> ex:brand "Sennheiser" .
+<http://electronicProduct/108> ex:brand "Leef" .
+<http://electronicProduct/109> ex:brand "Cobra Electronics" .
+<http://electronicProduct/110> ex:brand "ASUS" .
+<http://electronicProduct/111> ex:brand "Panasonic" .
+<http://electronicProduct/112> ex:brand "Jbl" .
+<http://electronicProduct/113> ex:brand "Antec" .
+<http://electronicProduct/114> ex:brand "Canon" .
+<http://electronicProduct/115> ex:brand "Panamax" .
+<http://electronicProduct/116> ex:brand "Dual" .
+<http://electronicProduct/117> ex:brand "Memorex" .
+<http://electronicProduct/118> ex:brand "Evga" .
+<http://electronicProduct/119> ex:brand "StarTech" .
+<http://electronicProduct/120> ex:brand "CybertronPC" .
+<http://electronicProduct/121> ex:brand "Olympus" .
+<http://electronicProduct/122> ex:brand "Kanto Living" .
+<http://electronicProduct/123> ex:brand "Insignia™" .
+<http://electronicProduct/124> ex:brand "Mee Audio" .
+<http://electronicProduct/125> ex:brand "Niles" .
+<http://electronicProduct/126> ex:brand "PYLE" .
+<http://electronicProduct/127> ex:brand "Garmin" .
+<http://electronicProduct/128> ex:brand "Bowers & Wilkins" .
+<http://electronicProduct/129> ex:brand "Rand McNally" .
+<http://electronicProduct/130> ex:brand "Bose" .
+<http://electronicProduct/131> ex:brand "Netgear" .
+<http://electronicProduct/132> ex:brand "Motorola Home" .
+<http://electronicProduct/133> ex:brand "MTX" .
+<http://electronicProduct/134> ex:brand "Sylvania" .
+<http://electronicProduct/135> ex:brand "Spartan" .
+<http://electronicProduct/136> ex:brand "360fly" .
+<http://electronicProduct/137> ex:brand "Kingston" .
+<http://electronicProduct/138> ex:brand "RODE" .
+<http://electronicProduct/139> ex:brand "Hauppauge" .
+<http://electronicProduct/140> ex:brand "Peerless-AV" .
+<http://electronicProduct/141> ex:brand "Cerwin-Vega" .
+<http://electronicProduct/142> ex:brand "Anker" .
+<http://electronicProduct/143> ex:brand "Sonic Alert" .
+<http://electronicProduct/144> ex:brand "House Of Marley" .
+<http://electronicProduct/145> ex:brand "Pyle" .
+<http://electronicProduct/146> ex:brand "ECOXGEAR" .
+<http://electronicProduct/147> ex:brand "Silicondust" .
+<http://electronicProduct/148> ex:brand "Lorex" .
+<http://electronicProduct/149> ex:brand "HyperX" .
+<http://electronicProduct/150> ex:brand "NETGEAR" .
+<http://electronicProduct/151> ex:brand "Logitech" .
+<http://electronicProduct/152> ex:brand "Razer" .
+<http://electronicProduct/153> ex:brand "j5create" .
+<http://electronicProduct/154> ex:brand "Asus" .
+<http://electronicProduct/155> ex:brand "Master Dynamic" .
+<http://electronicProduct/156> ex:brand "Zubie" .
+<http://electronicProduct/157> ex:brand "Buffalo Technology" .
+<http://electronicProduct/158> ex:brand "Thermaltake" .
+<http://electronicProduct/159> ex:brand "Motorola" .
+<http://electronicProduct/160> ex:brand "Digipower" .
+<http://electronicProduct/161> ex:brand "Papago" .
+<http://electronicProduct/162> ex:brand "Sharp" .
+<http://electronicProduct/163> ex:brand "Boytone" .
+<http://electronicProduct/164> ex:brand "Buffalo" .
+<http://electronicProduct/165> ex:brand "Intel" .
+<http://electronicProduct/166> ex:brand "GoPro" .
+<http://electronicProduct/167> ex:brand "Belkin Inc." .
+<http://electronicProduct/168> ex:brand "Apple" .
+<http://electronicProduct/169> ex:brand "SanDisk" .
+<http://electronicProduct/170> ex:brand "Aluratek" .
+<http://electronicProduct/171> ex:brand "Tp-Link" .
+<http://electronicProduct/172> ex:brand "Polk Audio" .
+<http://electronicProduct/173> ex:brand "RCA" .
+<http://electronicProduct/174> ex:brand "Sound Design" .
+<http://electronicProduct/175> ex:brand "Wacom" .
+<http://electronicProduct/176> ex:brand "X6D" .
+<http://electronicProduct/177> ex:brand "Corsair" .
+<http://electronicProduct/178> ex:brand "Grace Digital" .
+<http://electronicProduct/179> ex:brand "CORSAIR" .
+<http://electronicProduct/180> ex:brand "Polaroid" .
+<http://electronicProduct/181> ex:brand "SVS" .
+<http://electronicProduct/182> ex:brand "KEF" .
+<http://electronicProduct/183> ex:brand "Aiwa" .
+<http://electronicProduct/184> ex:brand "SKB" .
+<http://electronicProduct/185> ex:brand "Bose®" .
+<http://electronicProduct/186> ex:brand "WD" .
+<http://electronicProduct/187> ex:brand "Cooler Master" .
+<http://electronicProduct/188> ex:brand "Denon" .
+<http://electronicProduct/189> ex:brand "Novatel" .
+<http://electronicProduct/190> ex:brand "D-Link" .
+<http://electronicProduct/191> ex:brand "Visidec" .
+<http://electronicProduct/192> ex:brand "Sol Republic" .
+<http://electronicProduct/193> ex:brand "ZAGG" .
+<http://electronicProduct/194> ex:brand "Atrend" .
+<http://electronicProduct/195> ex:brand "Optoma" .
+<http://electronicProduct/196> ex:brand "Sony" .
+<http://electronicProduct/197> ex:brand "Sima" .
+<http://electronicProduct/198> ex:brand "FUGOO" .
+<http://electronicProduct/199> ex:brand "Yamaha" .
+<http://electronicProduct/200> ex:brand "I.am+" .
+<http://electronicProduct/201> ex:brand "BOYO" .
+<http://electronicProduct/202> ex:brand "Sdi Technologies, Inc." .
+<http://electronicProduct/203> ex:brand "BIC America" .
+<http://electronicProduct/204> ex:brand "Speck" .
+<http://electronicProduct/205> ex:brand "Jvcm" .
+<http://electronicProduct/206> ex:brand "Mevo" .
+<http://electronicProduct/207> ex:brand "Pyle Pro" .
+<http://electronicProduct/208> ex:brand "Actiontec" .
+<http://electronicProduct/209> ex:brand "Pny" .
+<http://electronicProduct/210> ex:brand "Cerwin Vega" .
+<http://electronicProduct/211> ex:brand "PyleHome" .
+<http://electronicProduct/212> ex:brand "Kanto" .
+<http://electronicProduct/213> ex:brand "Sengled" .
+<http://electronicProduct/214> ex:brand "Hisense" .
+<http://electronicProduct/215> ex:brand "Skybell" .
+<http://electronicProduct/216> ex:brand "Russound" .
+<http://electronicProduct/217> ex:brand "AfterShokz" .
+<http://electronicProduct/218> ex:brand "PNY" .
+<http://electronicProduct/219> ex:brand "Universal Remote Control" .
+<http://electronicProduct/220> ex:brand "DreamWave" .
+<http://electronicProduct/221> ex:brand "Insignia" .
+<http://electronicProduct/222> ex:brand "Belkin" .
+<http://electronicProduct/223> ex:brand "PreSonus" .
+<http://electronicProduct/224> ex:brand "AudioQuest" .
+<http://electronicProduct/225> ex:brand "V-Moda" .
+<http://electronicProduct/226> ex:brand "Sideclick" .
+<http://electronicProduct/227> ex:brand "Dell" .
+<http://electronicProduct/228> ex:brand "Thule" .
+<http://electronicProduct/229> ex:brand "Zoom" .
+<http://electronicProduct/230> ex:brand "SunBriteTV" .
+<http://electronicProduct/231> ex:brand "Energizer" .
+<http://electronicProduct/232> ex:brand "Diamond Multimedia" .
+<http://electronicProduct/233> ex:brand "Jaybird" .
+<http://electronicProduct/234> ex:brand "Jabra" .
+<http://electronicProduct/235> ex:brand "Linksys" .
+<http://electronicProduct/236> ex:brand "IOGEAR" .
+<http://electronicProduct/237> ex:brand "HP" .
+<http://electronicProduct/238> ex:brand "Escort" .
+<http://electronicProduct/239> ex:brand "AOC" .
+<http://electronicProduct/240> ex:brand "Cobra" .
+<http://electronicProduct/241> ex:brand "Outdoor Tech" .
+<http://electronicProduct/242> ex:brand "Midland" .
+<http://electronicProduct/243> ex:brand "Alienware" .
+<http://electronicProduct/244> ex:brand "Kicker" .
+<http://electronicProduct/245> ex:brand "Klipsch" .
+<http://electronicProduct/246> ex:brand "CLARITY-TELECOM" .
+<http://electronicProduct/247> ex:brand "NVIDIA" .
+<http://electronicProduct/248> ex:brand "ECO STYLE" .
+<http://electronicProduct/249> ex:brand "Master & Dynamic" .
+<http://electronicProduct/250> ex:brand "Victrola" .
+<http://electronicProduct/251> ex:brand "TCL" .
+<http://electronicProduct/252> ex:brand "Chief" .
+<http://electronicProduct/253> ex:brand "Aftershokz" .
+<http://electronicProduct/254> ex:brand "kate spade new york" .
+<http://electronicProduct/255> ex:brand "Turtle Beach" .
+<http://electronicProduct/256> ex:brand "Audioquest" .
