@@ -203,8 +203,8 @@ if __name__=='__main__':
     # modifData.print_column_ordered("prices.condition")
 
     # modifData.retrieveColumn("brand")
-
-    modifData.retrieveColumn("upc")
+    # modifData.retrieveColumn("upc")
+    modifData.retrieveColumn("asins")
 
     modifData.write_data_csv()
 
