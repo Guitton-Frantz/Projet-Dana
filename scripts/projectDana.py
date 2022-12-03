@@ -57,28 +57,29 @@ CATEGORIES = {
 }
 
 PRICES_AVAILABILITY = {
-    "In Stock": "In Stock",
-    "Yes": "In Stock",
-    "yes": "In Stock",
-    "TRUE": "In Stock",
-    "available": "In Stock",
-    "Out Of Stock": "Out Of Stock",
-    "FALSE": "Out Of Stock",
-    "No": "Out Of Stock",
-    "sold": "Out Of Stock",
-    "Retired": "Out of Stock",
-    "More on the Way": "More on the Way",
-    "Special Order": "Special Order",
+    "In Stock": "InStock",
+    "Yes": "InStock",
+    "yes": "InStock",
+    "TRUE": "InStock",
+    "available": "InStock",
+    "Out Of Stock": "OutOfStock",
+    "FALSE": "OutOfStock",
+    "No": "OutOfStock",
+    "sold": "OutOfStock",
+    "Retired": "OutofStock",
+    "More on the Way": "MoreOnTheWay",
+    "Special Order": "SpecialOrder",
     "undefined": ""
 }
 
 PRICES_CONDITION = {
-    "New": "New",
-    "new": "New",
-    "Used": "Used",
-    "refurbished": "Refurbished",
-    "refurbished": "Refurbished",
-    "pre-owned": "Pre-owned"
+    "New": "NewCondition",
+    "new": "NewCondition",
+    "Used": "UsedCondition",
+    "Refurbished": "RefurbishedCondition",
+    "refurbished": "RefurbishedCondition",
+    "pre-owned": "PreOwnedCondition",
+    "Pre-owned": "PreOwnedCondition"
 }
 
 class ModifyData:
@@ -194,17 +195,17 @@ if __name__=='__main__':
     # modifData.sort_categories()
     # modifData.print_column_ordered("categories", True)
 
-    # modifData.print_column_ordered("prices.availability")
-    # modifData.sort_prices_availability()
-    # modifData.print_column_ordered("prices.availability")
+    modifData.print_column_ordered("prices.availability")
+    modifData.sort_prices_availability()
+    modifData.print_column_ordered("prices.availability")
 
-    # modifData.print_column_ordered("prices.condition")
-    # modifData.sort_prices_condition()
-    # modifData.print_column_ordered("prices.condition")
+    modifData.print_column_ordered("prices.condition")
+    modifData.sort_prices_condition()
+    modifData.print_column_ordered("prices.condition")
 
     # modifData.retrieveColumn("brand")
     # modifData.retrieveColumn("upc")
-    modifData.retrieveColumn("asins")
+    # modifData.retrieveColumn("asins")
 
     modifData.write_data_csv()
 
