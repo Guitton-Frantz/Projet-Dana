@@ -17,4 +17,4 @@ Slides : [Web sémantique - Groupe 8](https://docs.google.com/presentation/d/1T6
 
 Schéma :
 
-[![Schéma](./img/schema.png)]
+![Schéma](./img/schema.png)
