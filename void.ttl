@@ -19,4 +19,4 @@ prefix dbo: <https://dbpedia.org/ressource/>
     rdfs:label "Marius GUITTON-FRANTZ".
 
 :Gaetan a foaf:Person;
-    rdfs:label "Gaë
+    rdfs:label "Gaetan REINHARDT".
