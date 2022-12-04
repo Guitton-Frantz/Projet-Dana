@@ -1,0 +1,47 @@
+@prefix ex: <http://example.org/electronicproduct/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Forme du Construct effectué avec OpenRefine
+
+CONSTRUCT {
+    ?productURI schema:identifier ?product_id;
+        rdf:type schema:Product;
+        schema:asin ?asins;
+        schema:brand [
+            rdf:type schema:Brand;
+            schema:name ?brand
+        ];
+        schema:category ?categories;
+        schema:manufacturer [
+            rdf:type schema:Brand;
+            schema:name ?brand
+        ];
+        schema:name ?name;
+        schema:gtin12 ?utc;
+        schema:weight [
+            rdf:type schema:QuantitiveValue;
+            schema:value ?weightValue^^xsd:decimal;
+            schema:unitText ?weightUnit
+        ];
+        schema:offers [
+            rdf:type schema:Offer;
+            schema:priceSpecification [
+                rdf:type schema:PriceSpecification;
+                schema:maxPrice ?maxPrice;
+                schema:minPrice ?minPrice"
+            ];
+            schema:availability schema:InStock;
+            schema:itemCondition schema:NewCondition;
+            ex:pricesIsSale ?priceIsSale;
+            schema:shippingDetails [
+                rdf:type schema:OfferShippingDetails;
+                schema:shippingLabel ?priceShipping
+            ];
+            schema:offeredBy [
+                rdf:type schema:Brand;
+                schema:name ?merchant
+            ]
+        ].
+}

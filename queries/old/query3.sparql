@@ -1,0 +1,9 @@
+prefix ex: <http://example.org/>
+
+SELECT ?categ (COUNT(?categ) AS ?count)
+WHERE {
+    ?product ex:brand "Samsung";
+             ex:categorie ?categ
+}
+GROUP BY ?categ
+ORDER BY DESC(?count)

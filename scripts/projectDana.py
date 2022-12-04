@@ -57,28 +57,29 @@ CATEGORIES = {
 }
 
 PRICES_AVAILABILITY = {
-    "In Stock": "In Stock",
-    "Yes": "In Stock",
-    "yes": "In Stock",
-    "TRUE": "In Stock",
-    "available": "In Stock",
-    "Out Of Stock": "Out Of Stock",
-    "FALSE": "Out Of Stock",
-    "No": "Out Of Stock",
-    "sold": "Out Of Stock",
-    "Retired": "Out of Stock",
-    "More on the Way": "More on the Way",
-    "Special Order": "Special Order",
+    "In Stock": "InStock",
+    "Yes": "InStock",
+    "yes": "InStock",
+    "TRUE": "InStock",
+    "available": "InStock",
+    "Out Of Stock": "OutOfStock",
+    "FALSE": "OutOfStock",
+    "No": "OutOfStock",
+    "sold": "OutOfStock",
+    "Retired": "OutofStock",
+    "More on the Way": "MoreOnTheWay",
+    "Special Order": "SpecialOrder",
     "undefined": ""
 }
 
 PRICES_CONDITION = {
-    "New": "New",
-    "new": "New",
-    "Used": "Used",
-    "refurbished": "Refurbished",
-    "refurbished": "Refurbished",
-    "pre-owned": "Pre-owned"
+    "New": "NewCondition",
+    "new": "NewCondition",
+    "Used": "UsedCondition",
+    "Refurbished": "RefurbishedCondition",
+    "refurbished": "RefurbishedCondition",
+    "pre-owned": "PreOwnedCondition",
+    "Pre-owned": "PreOwnedCondition"
 }
 
 class ModifyData:
@@ -166,6 +167,19 @@ class ModifyData:
         for data in ordered:
             print(f'{data[1]}. {data[0]}')
         print(f"There are {len(ordered)} different values for the column {column_name}")
+    
+    def retrieveColumn(self, column_name, column_list=False):
+        newData = set()
+        for iCol in range(len(self._columns)):
+            if self._columns[iCol].startswith(column_name):
+                for row in self._data:
+                    if column_list:
+                        for data in row[iCol].split(','):
+                            newData.add(data)
+                    else:
+                        newData.add(row[iCol])
+        self._columns = [column_name]
+        self._data = [[elem] for elem in newData]
 
 if __name__=='__main__':
     if len(argv)!=3:
@@ -177,9 +191,9 @@ if __name__=='__main__':
     modifData = ModifyData(argv[1], argv[2])
     print(modifData._columns)
     
-    modifData.print_column_ordered("categories", True)
-    modifData.sort_categories()
-    modifData.print_column_ordered("categories", True)
+    # modifData.print_column_ordered("categories", True)
+    # modifData.sort_categories()
+    # modifData.print_column_ordered("categories", True)
 
     modifData.print_column_ordered("prices.availability")
     modifData.sort_prices_availability()
@@ -188,6 +202,10 @@ if __name__=='__main__':
     modifData.print_column_ordered("prices.condition")
     modifData.sort_prices_condition()
     modifData.print_column_ordered("prices.condition")
+
+    # modifData.retrieveColumn("brand")
+    # modifData.retrieveColumn("upc")
+    # modifData.retrieveColumn("asins")
 
     modifData.write_data_csv()
 

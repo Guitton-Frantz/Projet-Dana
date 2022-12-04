@@ -1,0 +1,29 @@
+@prefix ex: <http://example.org/electronicproduct/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sch: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:AVphzgbJLJeJML43fA0o sch:identifier "AVphzgbJLJeJML43fA0o";
+    rdf:type sch:Product;
+    sch:asin "B00C78VIUE","B00C78VIUD";
+    sch:brand [rdf:type sch:Brand;
+               sch:name "Sanus"];
+    sch:category "TV","Video";
+    sch:manufacturer [rdf:type sch:Brand;
+                      sch:name "Sanus"];
+    sch:name "Sanus VLF410B1 10-Inch Super Slim Full-Motion Mount for 37 - 84 Inches TV's";
+    sch:gtin12 "27242884229";
+    sch:weight [rdf:type sch:QuantitiveValue;
+            sch:value "32.8"^^xsd:decimal;
+            sch:unitText "pounds"];
+    sch:offers [rdf:type sch:Offer;
+                sch:priceSpecification [rdf:type sch:PriceSpecification;
+                                        sch:maxPrice "104.99";
+                                        sch:minPrice "104.99"];
+                sch:availability sch:InStock;
+                sch:itemCondition sch:NewCondition;
+                ex:pricesIsSale "FALSE";
+                sch:shippingDetails [rdf:type sch:OfferShippingDetails;
+                                     sch:shippingLabel "Standard"];
+                sch:offeredBy [rdf:type sch:Brand;
+                            sch:name "Bestbuy.com"]].

@@ -1,0 +1,8 @@
+prefix ex: <http://example.org/>
+
+SELECT ?c
+WHERE {
+    ?s ex:brand "Sanus";
+       ex:categorie ?c
+}
+LIMIT 10
