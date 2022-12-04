@@ -181,6 +181,34 @@ class ModifyData:
         self._columns = [column_name]
         self._data = [[elem] for elem in newData]
 
+    def ounceToKG(self,p):
+        return p*0.0283495231
+
+    def poundToKG(self,p):
+        return p*0.45359237
+
+    def weightToKG(self):
+        i = self._columns.index("weight")
+        for row in self.data:
+            c = row[i]
+            newWeight = 0
+            c = c.lower()
+            s = c.split(" ")
+            if(len(s) == 1):
+                print("Error row " + str(rowNumber) + " contain: " + c) #Pour l'instant je les mets à 0 du coup
+            elif(s[1] == "pounds" or s[1] == "lbs" or s[1] == "lb." or s[1] == "lb"):
+                kg = self.poundToKG(float(s[0]))
+            elif(s[1] == "ounces" or s[1] == "oz"):
+                kg = self.ounceToKG(float(s[0]))
+            elif(s[1] == "g"):
+                kg = float(s[0])/1000
+            elif(s[1] == "kg"):
+                kg = float(kg)
+            newWeight = "%.3f" % kg  #arrondie au gramme près
+                
+            c = newWeight
+
+            
 if __name__=='__main__':
     if len(argv)!=3:
         print(f"""utilisation : {argv[0]} <source> <destination>
@@ -206,6 +234,8 @@ if __name__=='__main__':
     # modifData.retrieveColumn("brand")
     # modifData.retrieveColumn("upc")
     # modifData.retrieveColumn("asins")
+
+    modifData.weightToKG()
 
     modifData.write_data_csv()
 
