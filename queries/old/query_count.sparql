@@ -1,0 +1,8 @@
+prefix ex: <http://example.org/>
+
+
+SELECT COUNT( ?id)
+WHERE {
+  ?s ex:id ?id
+}
+LIMIT 10

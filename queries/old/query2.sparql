@@ -1,0 +1,14 @@
+prefix ex: <http://example.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?name ?asins
+WHERE {
+    ?s ex:pricesAvailability "In Stock";
+       ex:pricesCondition "New";
+       ex:pricesIsSale "TRUE";
+       ex:categorie "TV";
+       ex:pricesMerchant "Walmart.com";
+       rdfs:label ?name;
+       ex:asins ?asins
+}
+LIMIT 10
