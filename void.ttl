@@ -1,0 +1,22 @@
+prefix void: <http://rdfs.org/ns/void#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix dcterms: <http://purl.org/dc/terms/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix dbo: <https://dbpedia.org/ressource/>
+
+:ElectronicProducts a void:Dataset;
+    dcterms:title "Electronic Products and Pricing Data";
+    dcterms:subject dbo:Product;
+    dcterms:source <https://data.world/datafiniti/electronic-products-and-pricing-data>;
+    dcterms: contributor :Mathis;
+    dcterms: contributor :Marius;
+    dcterms: contributor :Gaetan.
+
+:Mathis a foaf:Person;
+    rdfs:label "Mathis DUPUIS".
+
+:Marius a foaf:Person;
+    rdfs:label "Marius GUITTON-FRANTZ".
+
+:Gaetan a foaf:Person;
+    rdfs:label "Gaetan REINHARDT".
