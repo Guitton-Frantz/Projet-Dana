@@ -1,0 +1,12 @@
+prefix ep:     <http://example.org/electronicproduct/>
+prefix ex:     <http://example.com/>
+prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix schema: <http://schema.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?c (COUNT(?s) AS ?count)
+WHERE {
+  ?s rdf:type ?c
+}
+GROUP BY ?c
+ORDER BY ?count
