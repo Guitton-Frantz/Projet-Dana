@@ -1,0 +1,49 @@
+SELECT DISTINCT ?brand ?brand2
+WHERE {
+  ?brand a schema:Brand;
+         schema:name ?brandName.
+  ?brand2 ex:status ?status;
+          schema:name ?brandName2.
+  FILTER(?brand != ?brand2 && ?brandName = ?brandName2).
+}
+LIMIT 50
+
+# Nombre de produits par ville
+SELECT ?city (COUNT(?product) AS ?nbProducts)
+WHERE {
+  	?product schema:brand ?brandProduct.
+    ?brandProduct schema:name ?brandProductName.
+    ?startUp schema:City ?city;
+             schema:name ?startUpName.
+  FILTER(UCASE(?brandProductName) = UCASE(?startUpName)).
+}
+GROUP BY ?city
+ORDER BY DESC(?nbProducts)
+
+# Ville, start-up, capital et nombre de produit
+SELECT ?city ?startUpName ?amount (COUNT(?product) AS ?nbProduct)
+WHERE {
+    ?product schema:brand [schema:name ?brandProductName].
+    ?startUp schema:City ?city;
+             schema:amount ?amount;
+             schema:name ?startUpName.
+  FILTER(UCASE(?brandProductName) = UCASE(?startUpName)).
+}
+GROUP BY ?city ?startUpName ?amount
+ORDER BY DESC(?nbProduct)
+
+# Ville, start-up, capital, et moyenne du prix des produits de cette marque
+SELECT ?city ?startUpName ?amount (AVG(?price) AS ?avgPrice)
+WHERE {
+    ?product schema:brand [schema:name ?brandProductName];
+             schema:offers [
+                schema:priceSpecification [
+                    schema:maxPrice ?price
+                ]].
+    ?startUp schema:City ?city;
+             schema:amount ?amount;
+             schema:name ?startUpName.
+  FILTER(UCASE(?brandProductName) = UCASE(?startUpName)).
+}
+GROUP BY ?city ?startUpName ?amount
+ORDER BY DESC(?nbProduct)
