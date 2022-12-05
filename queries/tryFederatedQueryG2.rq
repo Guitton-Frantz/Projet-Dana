@@ -1,0 +1,16 @@
+PREFIX ep:     <http://example.org/electronicproduct/> 
+PREFIX er:     <http://example.org/Review/>
+prefix ex:     <http://example.com/> 
+prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix schema: <http://schema.org/> 
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#> 
+
+SELECT *
+WHERE
+{
+  SERVICE <http://localhost:3030/G2dataset/query> { 
+    ?asin schema:category ?categories;
+          ?y ?z} 
+  BIND (REPLACE(STR(?asin), "^.*/([^/]*)$", "$1") as ?x).
+ ?a ?b ?x
+}
