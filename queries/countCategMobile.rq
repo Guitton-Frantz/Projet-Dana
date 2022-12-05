@@ -1,0 +1,14 @@
+PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+prefix ep:     <http://example.org/electronicproduct/>
+prefix ex:     <http://example.com/>
+prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix schema: <http://schema.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?b (count(?s) as ?count)
+WHERE {
+  ?s schema:category "Mobile";
+  	 schema:brand ?b
+}
+GROUP BY ?b
+ORDER BY DESC(?nbProduits)
