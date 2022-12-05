@@ -1,0 +1,33 @@
+PREFIX ep:     <http://example.org/electronicproduct/> 
+PREFIX er:     <http://example.org/Review/>
+prefix ex:     <http://example.com/> 
+prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix schema: <http://schema.org/> 
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#> 
+
+SELECT ?x ?nameProduct ?manufacturer ?categorie ?comment ?nameProvider ?price ?rating
+WHERE
+{
+  #service for the other dataset
+  SERVICE <http://localhost:3030/G2Dataset/query> { 
+    ?uri schema:category ?categorie;
+          schema:review ?review.
+    ?review schema:headline ?comment.
+    Optional{?review schema:ratingValue ?rating}
+  	} 
+  
+  #getting the amazon id
+  BIND (REPLACE(STR(?uri), "^.*/([^/]*)$", "$1") as ?asin).
+  
+  #product info
+  ?product schema:asin ?asin;
+           schema:offers ?offer;
+           schema:name ?nameProduct.
+  
+   Optional{?product schema:manufacturer/schema:name ?manufacturer}.
+  
+  #getting offer info
+  ?offer schema:offeredBy/schema:name ?nameProvider;
+         schema:priceSpecification/schema:minPrice ?price.
+  
+}LIMIT 50
