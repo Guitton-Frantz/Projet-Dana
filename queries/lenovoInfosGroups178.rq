@@ -1,0 +1,56 @@
+# Infos Lenovo G1
+SELECT ?brandTel (AVG(?StarRating) AS ?avgRating)
+WHERE {
+    ?upc dicom:ProductName ?name;
+    	 schema:brand ?brandTel;
+         schema:ratingCount [dbpedia-owl:starRating ?StarRating]
+    FILTER (STRENDS((STR(?brandTel)),"Lenovo")).
+}
+GROUP BY ?brandTel
+
+# Infos Lenovo G7
+SELECT ?startUpName ?city ?category
+WHERE {
+  ?startUp schema:City ?city;
+           schema:category ?category;
+          schema:name ?startUpName.
+  FILTER(?startUpName = "Lenovo").
+}
+
+# Infos Lenovo G8
+SELECT ?brandName (MIN(?minPrice) AS ?priceMin) (MAX(?maxPrice) AS ?priceMax)
+WHERE {
+  ?product schema:brand [
+              schema:name ?brandName
+              ];
+              schema:offers [
+                schema:priceSpecification [
+                  schema:maxPrice ?maxPrice;
+                  schema:minPrice ?minPrice
+              ]].
+  FILTER(?brandName = "Lenovo").
+}
+GROUP BY ?brandName
+
+# Info Lenovo groups 1, 7, 8
+SELECT ?brandName
+	?city
+	?category
+	(MIN(?minPrice) AS ?priceMin)
+	(MAX(?maxPrice) AS ?priceMax)
+	(AVG(?starRating) AS ?avgRating)
+WHERE {
+  ?product schema:brand [schema:name ?brandName];
+              schema:offers [
+                schema:priceSpecification [
+                  schema:maxPrice ?maxPrice;
+                  schema:minPrice ?minPrice
+              ]].
+  ?startUp schema:City ?city;
+           schema:category ?category;
+           schema:name ?brandName.
+  ?upc schema:ratingCount [dbpedia-owl:starRating ?starRating];
+           schema:brand ?brandTel
+  FILTER(?brandName = "Lenovo" && STRENDS((STR(?brandTel)),"Lenovo")).
+}
+GROUP BY ?brandName ?city ?category
