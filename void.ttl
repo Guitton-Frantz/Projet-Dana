@@ -8,9 +8,38 @@ prefix dbo: <https://dbpedia.org/ressource/>
     dcterms:title "Electronic Products and Pricing Data";
     dcterms:subject dbo:Product;
     dcterms:source <https://data.world/datafiniti/electronic-products-and-pricing-data>;
+    
     dcterms: contributor :Mathis;
     dcterms: contributor :Marius;
-    dcterms: contributor :Gaetan.
+    dcterms: contributor :Gaetan;
+    
+    void:triples 88676;
+    void:entities 16439;
+    
+    void:classes 5;
+    void:classPartition [void:class schema:Product];
+    void:classPartition [void:class schema:Offer];
+    void:classPartition [void:class schema:PriceSpecification];
+    void:classPartition [void:class schema:OfferShippingDetails];
+    void:classPartition [void:class schema:Brand];
+    
+    void:properties 16;
+    void:propertyPartition [void:property schema:identifier];
+    void:propertyPartition [void:property schema:asin];
+    void:propertyPartition [void:property schema:brand];
+    void:propertyPartition [void:property schema:name];
+    void:propertyPartition [void:property schema:category];
+    void:propertyPartition [void:property schema:manufacturer];
+    void:propertyPartition [void:property schema:gtin12];
+    void:propertyPartition [void:property schema:offers];
+    void:propertyPartition [void:property schema:priceSpecification];
+    void:propertyPartition [void:property schema:maxPrice];
+    void:propertyPartition [void:property schema:minPrice];
+    void:propertyPartition [void:property schema:availability];
+    void:propertyPartition [void:property schema:itemCondition];
+    void:propertyPartition [void:property ex:pricesIsSale];
+    void:propertyPartition [void:property schema:shippingLabel];
+    void:propertyPartition [void:property schema:offeredBy].
 
 :Mathis a foaf:Person;
     rdfs:label "Mathis DUPUIS".
